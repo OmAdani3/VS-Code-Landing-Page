@@ -1,0 +1,667 @@
+/* Global Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #111111;
+    color: white;
+}
+
+nav{
+    background-color: rgb(19, 18, 18);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 9vh;
+}
+
+nav .container{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.name{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 20%;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 110px;
+    margin-right: 0px;
+}
+.name img{
+    padding: 10px;
+    width: 25px;
+    height: 25px;
+}
+.name img:hover{
+    cursor: pointer;
+}
+
+nav a{
+    color: rgb(224, 220, 220);
+    text-decoration: none;
+}
+.headbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav .headbar ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-right: 90px;
+}   
+
+nav .headbar ul li{
+    display: inline-block;
+    padding: 0px 5px;
+    font-size: 15px;
+    font-weight: 600;
+    width: 50%;
+}
+
+nav .stuff{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20%;
+    gap: 20px;
+}
+
+.stuff input::placeholder{
+    color: rgb(224, 220, 220);
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    padding: 2px 10px;
+    background-color: rgb(23,23,23);
+    border: 1px solid rgb(224,220,220);
+    /* gap: 8px; */
+}
+.fa-magnifying-glass{
+    color: rgb(224, 220, 220);
+    font-size: 15px;
+    transform: rotate(90deg);
+}
+
+.search-box input{
+    padding: 3px 10px;
+    width: 100px;
+    background-color: rgb(23, 23, 23);
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+}
+
+.search-shortcut-overlay {
+    position: relative;
+    right: 30px;
+    background-color: rgb(23, 23, 23);
+    color: rgb(224, 220, 220);
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.search-box:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.search-box input:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.stuff button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    color: white;
+    background-color: #0078d4;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    padding: 0px 20px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.stuff button:hover{
+    cursor: pointer;
+    background-color: #0669b6;
+    text-decoration: none;
+}
+
+
+.comment{
+    background-color: rgb(2 23 53);
+    color: rgb(224, 220, 220);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    margin: 8px 0px;
+}
+
+.comment p{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comment p span{
+    color: #9fb1d1;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0px 5px;
+}
+.comment p a{
+    color: #4daafc;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+ .fa-xmark{
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    color: rgb(224, 220, 220);
+    font-size: 16px;
+    font-weight: 300;
+
+ }
+
+ .fa-xmark:hover{
+    color: rgb(224, 220, 220);
+    cursor: pointer;
+ }
+
+
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.hero h1{
+    width: 600px;
+    height: 150px;
+    font-size: 70px;
+    font-weight: 700;
+    color: white;
+    line-height: 120%;
+    letter-spacing: -0.8px;
+    word-break: break-word;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif
+}
+
+.hero .card1{
+    height: 130px;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #20252c;                         
+    color: rgb(224, 220, 220);
+    border-radius: 14px;
+    padding: 10px 0px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border: none;
+    border-radius: 12px;
+    height: 50px;
+}
+
+.btn img{
+    padding: 5px 4px;
+    width: 25px;
+    height: 25px;
+}
+
+.card1 button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card1 .btn:hover{
+    cursor: pointer;
+    background-color: white;
+    text-decoration: none;
+    outline: 2px solid white;
+    outline-offset: 4px;
+}
+
+.card1 .platform-links a{
+    color: white;
+    font-weight: 500;
+}
+
+.hero .card1 .platform-links{
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(224, 220, 220);
+    margin-top: 10px;
+    padding: 5px 0px;
+}
+
+.card1 .license-notice a{
+    color: rgb(224, 220, 220);
+    text-decoration: underline;
+}
+
+.hero .card1 .license-notice{
+    font-size: 10px;
+    font-weight: 600;
+    color: rgb(224, 220, 220);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    width: 100%;
+}
+
+.code{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    max-width: 100%;
+    height: auto;
+    /* overflow-x: hidden; */
+}
+
+.code img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99.90%;
+    height: 86vh;
+}
+
+card{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    width: 24%;
+    height: 62vh;
+    border: 1px solid #20252c;
+    background-color: #1a1d21;
+    margin: 0px 35px;
+}
+
+card img{
+    padding: 10px 0px;
+    width: 90%;
+    height: auto;
+}
+
+.card-container h2{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin: 10px 10px;
+}
+
+.card-container p{
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(140, 169, 215);
+    text-align: left;
+    line-height: 1.9;
+    padding: 0px 10px;
+}
+
+#git{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 100px;
+}
+
+.cntainer{
+    background-image: url(copilot-free-banner-bg-dark.webp);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 80%;
+    height: 20vh;
+    border-radius: 10px;
+    margin: 0px 150px;
+}
+
+.cntainer .hd{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 20px;
+    padding-right: 200px;
+}
+
+.cntainer .try{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cntainer .try button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: #262a2e;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 8px;
+    font-weight: 600;
+    border: 1px solid rgb(118, 118, 118);
+}
+
+#modes{
+    width: 99.90%;
+    padding: 60px 0px;
+}
+
+#modes .mode-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+#modes .mode-container .txt{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+    padding: 0px 80px;
+    line-height: 1.6;
+}
+
+.txt h2{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0px;
+    padding: 5px 0px;
+}
+
+.txt p{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(140, 169, 215);
+}
+
+.txt a{
+    color: rgb(22, 160, 224);
+    text-decoration: underline;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+
+
+#modes .mode-container .imag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+}
+
+#modes img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#extensions{
+    width: 99.90%;
+    height: auto;
+}
+
+ 
+#extensions .extensions-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.extensions-container .ex{
+    width: 20%;
+    height: auto;
+    padding: 0px 100px;
+}
+
+.extensions-container .extens{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70%;
+    height: auto;
+}
+
+.extens{
+    margin-right: 0px;
+    margin-left: 20px;
+}
+
+.extens img{
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+} 
+.jupyter{
+    background-color: white;
+    padding: 0px;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+
+.ex h2{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0px;
+    padding: 5px 0px;
+}
+
+.ex p{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(140, 169, 215);
+    line-height: 1.6;
+}
+
+.ex a{
+    color: rgb(22, 160, 224);
+    text-decoration: underline;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.extens .extend{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(37, 36, 36);
+    border-radius: 5px;
+    margin: 10px;
+    width: 80%;
+    height: auto;
+}
+
+.extens .texts{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0px 10px;
+}
+
+.texts h4{
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.texts p{
+    font-size: 1rem;
+    font-weight: 500;
+   color: rgb(140, 169, 215);
+}
+
+.jupyter{
+    opacity: 0.6;
+}
+.gitlens{
+    opacity: 0.6;
+}
+.csharp{
+    opacity: 0.6;
+}
+
+
+.mdb{
+    opacity: 0.3;
+}
+
+
+.azure{
+    opacity: 0.3;
+}
+.remote{
+    opacity: 0.3;
+}
+
+.extens .lne{
+    color: white;
+    font-size: 11px;
+    font-family: 600;
+    margin: 0px 20px;
+}
+
+.lne{
+    grid-column: 1/-1;
+    text-align: center;
+    margin: 20px;
+}
+
+.lne a{
+    color:#0078d4;
+    font-weight: 600;
+}
+.extend:hover{
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.bottombar{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+img{
+    height: 20px;
+}
+
+.bottombar .text{
+    font-weight: 600;
+    width: 30%;
+    padding: 0px 96px;
+    margin: 0px 10px;
+    text-align: start;
+}
+
+.text h3{
+    color: white;
+    font-size: 24px;
+
+}
+.text p{
+    line-break: auto;
+    font-size: 16px;
+    color: rgb(140, 169, 215);
+    line-height: 1.6;
+}
+
+.imgs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70%;
+}
+
+.imgs figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
